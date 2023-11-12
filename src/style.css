@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root{
+    --dark-blue: #262E38;
+    --light-gray: #969FAD;
+    --font-family: 'Overpass', sans-serif;
+    --h1-font-size: 28px;
+    --p-font-size: 15px;
+    --line-height: 24px;
+    --active-btn-background: #FC7614;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 25);
+    padding: 0 20px;
+}
+
+/* Container Div */
+
+.container,
+.thanks-div{
+    background: linear-gradient(to bottom, #232A34, #181E27);
+    padding: 32px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.star-img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    margin-bottom: 30px;
+}
+
+.question h1, 
+.thanks-h1{
+    color: white;
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+    font-size: var(--h1-font-size);
+}
+
+.question p,
+.desc-p{
+    color: var(--light-gray);
+    font-family: var(--font-family);
+    font-size: var(--p-font-size);
+    line-height: var(--line-height);
+}
+
+.rate-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 32px;
+}
+
+.rate-buttons .rate-button{
+    background-color: var(--dark-blue);
+    color: var(--light-gray);
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+.rate-buttons .rate-button.active{
+    background-color: var(--active-btn-background);
+    color: white;
+}
+
+.submit-btn,
+.change-submit-btn{
+    width: 100%;
+    background-color: var(--active-btn-background);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 45px;
+    border-radius: 30px;
+}
+
+.submit-btn.active{
+    background-color: white;
+    color: var(--active-btn-background);
+}
+
+/* Thanks DIV */
+
+.thanks-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.thanks-div img{
+    width: 162px;
+}
+
+.how-much-p{
+    background: var(--dark-blue);
+    padding: 4px 20px;
+    color: var(--active-btn-background);
+    border-radius: 30px;
+    margin: 32px 0;
+    font-family: var(--font-family);
+    font-size: var(--p-font-size);
+    line-height: 24px;
+}
+
+.change-submit-btn{
+    margin-top: 32px;
+}
