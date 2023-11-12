@@ -17,7 +17,7 @@ const Thanks = ({rate, btns, setSubmited, submited}) => {
             className="change-submit-btn"
             onClick={() => setSubmited(!submited)}
             >
-                ahange answer
+                change answer
             </button>
         </div>
     )
